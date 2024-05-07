@@ -18,7 +18,7 @@ time.sleep(3)
 
 #2. ----------------Texto----------------
 pyautogui.click(x=494, y=81)
-pyautogui.write("Computador hackeado 👺, hihihi")
+pyautogui.write("Computador hackeado, hihihi")
 
 # Aqui ele vai ficar em um limite de loop de "29"
 for apagar in range(29):

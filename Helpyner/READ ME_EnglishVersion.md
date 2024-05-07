@@ -45,8 +45,7 @@
 
 ## 📃 Credits
 
-- 💻 [GuilhermeSantos97](https://github.com/quasar098) Access on the GitHUB profile!
-
+- 💻 [GuilhermeSantos97](https://github.com/GuilhermeSantos97) Access on the GitHUB profile!
 
 ## 💡 Contributing
 **Contributions are always welcome!**

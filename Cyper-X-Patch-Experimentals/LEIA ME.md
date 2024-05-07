@@ -20,15 +20,12 @@
 
 ## 🚀 Uso
 
-> [!ATENÇÃO]  
+> [ATENÇÃO!!]  
 > **[Baixe Python](https://www.python.org/downloads/)** Se caso você não tiver. Isso será necessário.
    
 1. **Clone the repository** 🔗
    - If you have [Git](https://git-scm.com/downloads), use it to clone the repository to your local machine:
      ```bash
-     git clone https://github.com/impavloh/DesktopLimboKeys
-     ```
-   - Or [download](https://github.com/impavloh/DesktopLimboKeys/archive/refs/heads/master.zip) the project directly using the 'Download ZIP' option from "CODE" (the green button)
 
 
 2. **Requisitos de instalação** 📦
@@ -38,15 +35,15 @@
    ```
    
 3. **Iniciando a Ferramenta** ▶️
-    - Start the game using Python:
+    - Iniciar a ferramenta através do Python:
     ```bash
-    python menu.py
+    python zero.py
     ```
 
 ## 📃 Créditos
-- 💻 [GuilhermeSantos97](https://github.com/quasar098) no GitHUB!
 
-- 📝 Flat-it for the main font used in Geometry Dash
+- 💻 [GuilhermeSantos97](https://github.com/GuilhermeSantos97) Acesso no perfil GitHUB!
+
 
 ## 💡 Contributing
-**Contributions are welcome!** Para maiores atualizações, Por favor venha em [issue](https://github.com/impavloh/DesktopLimboKeys/issues) first to discuss what you would like to change.
+**Contribuições são sempre Bem-vindas!** 

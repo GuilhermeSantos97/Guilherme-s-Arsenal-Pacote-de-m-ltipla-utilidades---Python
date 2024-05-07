@@ -1,6 +1,6 @@
 <p align="center">
   <p align="center">
-    <em> O Que são subdomínios? </em>🔑
+    <em>🌐 O Que são Domínio e subdomínios? 🌐</em>
   </p>
   <p align="center">
     <img src="https://img.shields.io/badge/Windows-0078D6?style=for-the-badge&logo=windows&logoColor=white" alt="Windows">
@@ -8,45 +8,48 @@
   </p>
 </p>
 
-## 🎯 Características & Interface
+>[Aqui você verá como funciona um dominío]
 
-- ⭐ **Family-Friendly Interface**: projetada para ser acessível e segura para usuários de todas as idades.
-
-- ⚙️ **Fácil de Configurar**: Utilize JSON para configuração direta.
-- 🛠️ **Totalmente customizavél**: Personalize as configurações para atender às suas preferências.
-
-  <img src="https://i.imgur.com/t7CwxZj.png" alt="Main Menu interface" height="400"/>
+<p align="center">
+  <img src="https://www.hostinger.com.br/tutoriais/wp-content/uploads/sites/12/2021/10/Como-Funcionam-os-Dominios.png" alt="Exemplo De Dominio" height="400"/>
+</p>
   
 
-## 🚀 Uso
+## 🚀 O que são Dominíos, Subdomínios?
 
 > [!ATENÇÃO]  
-> **[Baixe Python](https://www.python.org/downloads/)** Se caso você não tiver. Isso será necessário.
    
-1. **Clone the repository** 🔗
-   - If you have [Git](https://git-scm.com/downloads), use it to clone the repository to your local machine:
-     ```bash
-     git clone https://github.com/impavloh/DesktopLimboKeys
-     ```
-   - Or [download](https://github.com/impavloh/DesktopLimboKeys/archive/refs/heads/master.zip) the project directly using the 'Download ZIP' option from "CODE" (the green button)
+1. **O que são Dominios?** 🔗
+   - Nome de **domínio** ou **domínio de Internet** é um nome que serve para localizar e identificar conjuntos de computadores na Internet. O nome de domínio foi concebido com o objetivo de facilitar a memorização dos endereços de computadores na Internet. Sem ele, teríamos que memorizar uma sequência grande de números. 
 
 
-2. **Requisitos de instalação** 📦
-    - Usa [pip](https://python.land/virtual-environments/installing-packages-with-pip) para instalar o necessário em:
-   ```bash
-   pip install -r requisitos.txt
-   ```
+2. **Exemplos de Dominios** 🌐
+    - *Nome de domínio*
+    É o nome exclusivo que aparece após o símbolo @ nos endereços de e-mail e após www. nos endereços da Web. Por exemplo, o nome de domínio example.com pode ser convertido no endereço físico 198.102.434.8. Outros exemplos de nomes de domínio são google.com e wikipedia.org.
    
-3. **Iniciando a Ferramenta** ▶️
-    - Start the game using Python:
-    ```bash
-    python menu.py
-    ```
+
+3. **O Que São Os SubDomínios**✨
+    - Os **subdomínios** permitem que você crie conteúdo adicional num site separado da sua página principal, mas sem a necessidade de comprar um novo nome de domínio. Com um subdomínio (ou vários!), você pode economizar dinheiro e melhorar seus projetos na internet.
+
+    - Tecnicamente falando, www é o subdomínio mais popular. No entanto, neste artigo, vamos nos concentrar em outros exemplos de subdomínios comuns, como loja, blog ou suporte, pois eles têm uma função específica.
+
+    - Tenha em mente que subdomínios e subdiretórios são coisas diferentes. Embora ambos façam parte da estrutura de uma URL e sejam úteis para a organização do seu conteúdo, eles diferem nos aspectos técnicos e no impacto que trazem ao seu site.
+
+    - Com isso em mente, explicaremos o que é exatamente um subdomínio, seus benefícios e mostraremos como criar um. Também explicaremos as diferenças entre subdomínio e subdiretório, para que você decida qual é mais adequado para a sua necessidade.
+
+
+4. **Exemplos de SubDoínios**
+<p align="center">
+    <img src="https://www.hostinger.com.br/tutoriais/wp-content/uploads/sites/12/2023/05/BR-estrutura-de-uma-url.png" alt="Exemplo De Dominio" height="300"/>
+    <img src="https://www.hostinger.com.br/tutoriais/wp-content/uploads/sites/12/2023/05/what-are-subdomains-1.jpg" alt="Exemplo De Dominio" height="300"/>
+  </p>
+</p>
+     
 
 ## 📃 Créditos
-- 💻 [GuilhermeSantos97](https://github.com/quasar098) no GitHUB!
+- 💻 [GuilhermeSantos97](https://github.com/GuilhermeSantos97) no GitHUB!
+- 💻 [HostingerTutoriais](https://www.hostinger.com.br/tutoriais) Na Web!
 
-- 📝 Flat-it for the main font used in Geometry Dash
 
-## 💡 Contributing
-**Contributions are welcome!** Para maiores atualizações, Por favor venha em [issue](https://github.com/impavloh/DesktopLimboKeys/issues) first to discuss what you would like to change.
+## 💡 Contribuição
+**Contribuições são sempre Bem-vindas!**  
