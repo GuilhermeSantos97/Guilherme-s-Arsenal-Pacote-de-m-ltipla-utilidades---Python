@@ -19,9 +19,6 @@ def domain_scanner(domain, direc):
             
         except requests.ConnectionError:
             pass
- 
-
-print("MADE BY DEV7KNIGHT")
 
 print("Please dont be dumb and enter url only enter domain")
 domain = input("Enter the Domain Name: ")
