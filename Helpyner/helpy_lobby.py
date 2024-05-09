@@ -1,4 +1,4 @@
-import os 
+import os,time, sys
 import random
 
 from colorama import Fore,init
@@ -6,10 +6,11 @@ from colorama import Fore,init
 # inicializa o colorama
 init()
 
+
 #Variavel da Menssagem 1
-menssagem1 = (Fore.RED+"""
+msg = (Fore.RED+""""
                     
-                          ⣀⣀⣤⣤⣤⣤⡼⠀⢀⡀   ⢱⡄⡀⠀⠀⠀⢲⣤⣤⣤⣤⣀⣀⡀
+                          ⣀⣀⣤⣤⣤⣤⡼⠀⢀⡀  ⢱⡄⡀⠀⠀⠀⢲⣤⣤⣤⣤⣀⣀⡀
             ⠀⠀⠀⠀⠀⠀⠀⠀⠀⣠⣴⣾⣿⣿⣿⣿⣿⡿⠛⠋⠁⣤⣿⣿⣿⣧⣷⠀⠀⠘⠉⠛⢻⣷⣿⣽⣿⣿⣷⣦⣄⡀⠀⠀⠀⠀⠀⠀⠀⠀
             ⠀⠀⠀⠀⠀⠀⢀⣴⣞⣽⣿⣿⣿⣿⣿⣿⣿⠁⠀⠀⠠⣿⣿⡟⢻⣿⣿⣇⠀⠀⠀⠀⠀⣿⣿⣿⣿⣿⣿⣿⣿⣟⢦⡀⠀⠀⠀⠀⠀⠀
             ⠀⠀⠀⠀⠀⣠⣿⡾⣿⣿⣿⣿⣿⠿⣻⣿⣿⡀⠀⠀⠀⢻⣿⣷⡀⠻⣧⣿⠆⠀⠀⠀⠀⣿⣿⣿⡻⣿⣿⣿⣿⣿⠿⣽⣦⡀⠀⠀⠀⠀
@@ -28,11 +29,19 @@ menssagem1 = (Fore.RED+"""
           By: Guilherme Santos
           version: 1.17.1
             -----------------------------------------------------------------
- """ + Fore.RESET)                            
+ """ +Fore.RESET) 
 
 
+menssagem2 = [Fore.RED + "Tip: Não use Softwares pitaras!", "Tip: Seja bem vindo Guerreiro", "Tip: Você sabia que esse software está sendo desenvolvido a mais de 1 mês e meio?",
+              "Tip: Qualquer dúvida, veja na opção > 2 Info (Contato DEV)",
+              "Tip: O pai tá On!!!"]   
 
-print(menssagem1)
+for i in range(1):
+    msg2 = random.choice(menssagem2) # Variavel msg vai definer as "menssagens" dentro do parentese.
+    time.sleep(3)
+
+
+print(msg + msg2)
 
 
 def display_menu():
@@ -59,7 +68,20 @@ def execute_command(command):
     elif command == '4':
         os.system('cmd /k "python Assets/Multiferramentas_select.py"' if os.name == 'nt' else 'python Assets/Multiferramentas_select.py')
     else:
-        print('Opção invalida! Por favor use a opção certa.')
+        print(Fore.BLUE + """"
+              
+/// ╔═══════════════════════════════════════════════════════════════════════╗
+/// ║    ██╗                        ██╗  ██╗ ██████╗ ██╗  ██╗               ║
+/// ║██╗██╔╝                        ██║  ██║██╔═████╗██║  ██║               ║
+/// ║╚═╝██║                         ███████║██║██╔██║███████║               ║
+/// ║██╗██║                         ╚════██║████╔╝██║╚════██║               ║
+/// ║╚═╝╚██╗                             ██║╚██████╔╝     ██║               ║
+/// ║    ╚═╝                             ╚═╝ ╚═════╝      ╚═╝               ║
+/// ║                                                                       ║
+/// ║                                                                       ║
+/// ║                                                                       ║
+/// ║          "Opção Errada! Por favor selecione a opção Certa!!!"         ║
+/// ╚═══════════════════════════════════════════════════════════════════════╝ """)
 
 while True:
     display_menu()

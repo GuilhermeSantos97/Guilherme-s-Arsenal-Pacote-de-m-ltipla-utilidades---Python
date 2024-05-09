@@ -10,6 +10,7 @@ def phone_locator(phone_number, api_key):
         "apikey": api_key
     }
 
+    #aqui é a resposta
     response = requests.get(url, headers=headers)
     data = response.json()
     return data
