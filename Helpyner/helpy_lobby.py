@@ -43,7 +43,7 @@ for i in range(1):
 
 print(msg + msg2)
 
-
+#def -> Criar uma função
 def display_menu():
     print(Fore.GREEN + """
     ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――
