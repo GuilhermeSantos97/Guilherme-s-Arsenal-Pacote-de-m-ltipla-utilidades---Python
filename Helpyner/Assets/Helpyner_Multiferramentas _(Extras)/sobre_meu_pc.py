@@ -13,6 +13,30 @@ print(Fore.CYAN + f"Nome Computador é: {platform.node()}\n" +
                   f"Seu Processador é: {platform.processor()}\n" +
                   f"Seu Sistema Operacional é: {platform.system()}\n" +
                   f"Seu sistema geral: {platform.win32_ver(release='', version='', csd='', ptype='')}\n" + 
-                  f"Plataforma De Arquitetura é: {platform.architecture(executable=sys.executable, bits='')}\n")
+                  f"Plataforma De Arquitetura é: {platform.architecture(executable=sys.executable, bits='')}\n"                
+             """  ⠀
+                   ⢰⠉⢷⠒⠒⠒⠒⠒⠒⠒⠒⣺⠉⡆⠀⠀
+                ⠀⠀ ⠀⢧⠘⢦⣀⣀⣀⣀⣀⣀⡰⠃⡸⠁⠀⠀
+                ⠀⠀⠀ ⠀⠳⣄⠑⠦⡀⢀⡠⠊⣠⠞⠁⠀⠀⠀
+                ⠀⠀⠀⠀⠀⠀ ⢑⡦⣈⠓⢤⡊⠀⠀⠀⠀⠀⠀
+                ⠀⠀⠀⠀ ⢀⠔⢁⡤⠚⠑⠤⡈⠣⡀⠀⠀⠀⠀
+                ⠀⠀⠀ ⢠⠏⡰⠯⠤⠤⠤⠤⠼⢆⠘⡄⠀⠀⠀
+                ⠀⠀⠀⠸⠀⣇⣀⣀⣀⣀⣀⣀⣘⡄⢱⠀⠀⠀
+                ⠀⠀⠀ ⢰⠀⡇⠀⠀⠀⠀⠀⠀ ⢰⠁⡌⠀⠀⠀
+                ⠀⠀⠀ ⠈⢧⠘⢖⡒⠒⠒⠒⡲⠃⡰⠁⠀⠀⠀
+                ⠀⠀⠀⠀ ⠀⠳⢄⡙⣢⠔⠊⣠⠞⠁⠀⠀⠀⠀
+                ⠀⠀⠀⠀⠀ ⢀⠴⠋⣡⢔⡛⠢⣀⠀⠀⠀⠀⠀
+                ⠀⠀⠀ ⢀⡔⢁⡴⠊⠀⠀⠙⢢⡈⠣⡀⠀⠀⠀
+                ⠀⠀⠀ ⡎⢠⠋⠉⠉⠉⠉⠉⠉⠙⡄⢱⡀⠀⠀
+                ⠀⠀⠀ ⢇⡼⠒⠒⠒⠒⠒⠒⠒⠒⢣⣠⠃   """)
+
+
+
+
+
+
+
+
+
 
 

@@ -3,3 +3,4 @@ askdirectory
 colorama
 PIL
 rembg
+win10toast
