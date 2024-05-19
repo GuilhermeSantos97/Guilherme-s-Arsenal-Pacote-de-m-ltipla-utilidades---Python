@@ -97,9 +97,6 @@ def execute_command(command):
         pyautogui.press("enter")
         time.sleep(3)
         
-
-    
-    
     else:
         print(Fore.BLUE + """"
               

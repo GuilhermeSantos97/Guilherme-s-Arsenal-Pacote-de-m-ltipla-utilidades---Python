@@ -8,18 +8,20 @@
 # -----Biblioteca de imagens ---------
 #python -m pip install --upgrade Pillow
 
-import os
+import customtkinter as ctk
+import tkinter as tk
 
+from PIL import *
 from tkinter.filedialog import askdirectory
 from rembg import remove
 from PIL import Image
 
 
-def main():
+def selecionar_foto():
 
     # Localizar a pasta que será feita a seleção da foto.
-    foto = askdirectory(title="Selecione uma foto para remover o fundo")
-    print(foto)
+    tk = askdirectory(title="Selecione uma foto para remover o fundo")
+    print(tk)
 
 
     # 2 Variáveis chamas de "input_path" e "output_path".
@@ -40,4 +42,4 @@ def main():
 
     # Os 2 iguais são definidos como resposta ao main.
 if __name__ == "__main__":
-    main()
+    selecionar_foto()

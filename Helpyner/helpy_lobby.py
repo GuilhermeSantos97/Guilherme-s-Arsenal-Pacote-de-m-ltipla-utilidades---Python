@@ -1,28 +1,22 @@
-import os,time
+import os
 import random
-import platform
+import json
 
 from colorama import Fore,init
-from win10toast import ToastNotifier
+from pystyle import Colorate, Colors
 
 
-# inicializa o colorama
+# inicializa o colorama & pystyle
 init()
 
-#Criando uma váriavel chamada de "toast"
-toast = ToastNotifier()
-
+# Criando uma váriavel chamada de "toast"
+# "notificação" vai inicializar com a responta do "=" o ToastNotifier()
 
 
 #Variavel da Menssagem 1
-msg = (Fore.RED+""""
+titulo = ("""
                     
-                          ⣀⣀⣤⣤⣤⣤⡼⠀⢀⡀  ⢱⡄⡀⠀⠀⠀⢲⣤⣤⣤⣤⣀⣀⡀
-            ⠀⠀⠀⠀⠀⠀⠀⠀⠀⣠⣴⣾⣿⣿⣿⣿⣿⡿⠛⠋⠁⣤⣿⣿⣿⣧⣷⠀⠀⠘⠉⠛⢻⣷⣿⣽⣿⣿⣷⣦⣄⡀⠀⠀⠀⠀⠀⠀⠀⠀
-            ⠀⠀⠀⠀⠀⠀⢀⣴⣞⣽⣿⣿⣿⣿⣿⣿⣿⠁⠀⠀⠠⣿⣿⡟⢻⣿⣿⣇⠀⠀⠀⠀⠀⣿⣿⣿⣿⣿⣿⣿⣿⣟⢦⡀⠀⠀⠀⠀⠀⠀
-            ⠀⠀⠀⠀⠀⣠⣿⡾⣿⣿⣿⣿⣿⠿⣻⣿⣿⡀⠀⠀⠀⢻⣿⣷⡀⠻⣧⣿⠆⠀⠀⠀⠀⣿⣿⣿⡻⣿⣿⣿⣿⣿⠿⣽⣦⡀⠀⠀⠀⠀
-            ⠀⠀⠀⠀⣼⠟⣩⣾⣿⣿⣿⢟⣵⣾⣿⣿⣿⣧⠀⠀⠀⠈⠿⣿⣿⣷⣈⠁⠀⠀⠀⠀⣰⣿⣿⣿⣿⣮⣟⢯⣿⣿⣷⣬⡻⣷⡄⠀
-            ⠀⠀⢀⡜⣡⣾⣿⢿⣿⣿⣿⣿⣿⢟⣵⣿⣿⣿⣷⣄⠀⣰⣿⣿⣿⣿⣿⣷⣄⠀⢀⣼⣿⣿⣿⣷⡹⣿⣿⣿⣿⣿⣿⢿⣿⣮⡳⡄
+                
             -----------------------------------------------------------------              
                              _    _      _                             
                             | |  | |    | |                            
@@ -34,31 +28,27 @@ msg = (Fore.RED+""""
                                           |_|    |___/     
                               
           By: Guilherme Santos
-          version: 1.17.1
+          version: 1.9.1
             -----------------------------------------------------------------
- """) 
+        """) 
+
+titulo = Colorate.Horizontal(Colors.red_to_yellow, titulo)
+
+menssagem2 = [Fore.RED + "Tip: Não use Softwares pitaras!", Fore.RED + "Tip: Você sabia que esse software está sendo desenvolvido a mais de 1 mês e meio?", Fore.RED +
+              "Tip: Qualquer dúvida, veja na opção > 2 Info (Contato DEV)", Fore.RED +
+              "Tip: O pai tá On!!!", "Tip: Quer  ver novos aprimoramentos? Veja no gitHub Oficial!"]   
 
 
-menssagem2 = [Fore.RED + "Tip: Não use Softwares pitaras!", "Tip: Seja bem vindo Guerreiro", "Tip: Você sabia que esse software está sendo desenvolvido a mais de 1 mês e meio?",
-              "Tip: Qualquer dúvida, veja na opção > 2 Info (Contato DEV)",
-              "Tip: O pai tá On!!!"]   
-
-for i in range(1):
-    msg2 = random.choice(menssagem2) # Variavel msg vai definer as "menssagens" dentro do parentese.
-    time.sleep(3)
+# Aqui terá um loop para cada menssagem dentro da váriavel menssagem2.
+# variavel msg responsvel por gurdar as informações da  "menssagem2"
+for i in range(31):
+    msg = random.choice(menssagem2) # Variavel msg vai definer as "menssagens" dentro do parentese.
 
 
-toast.show_toast(
-    "Helpyner Service", #Nome da notificação
-    f"Bem-vindo(a) ao Helpyner {platform.node()}", #Corpo da notificação
-    duration = 10, #Duração
-    icon_path = "images.png", #Icone
-    threaded = True, 
-)
 
-
+# Print!
 #aqui ele irá printar as váriaveis
-print(msg + msg2)
+print(titulo + msg)
 
 #def -> Criar uma função
 def display_menu():
@@ -99,12 +89,23 @@ def execute_command(command):
 /// ║                                                                       ║
 /// ║          "Opção Errada! Por favor selecione a opção Certa!!!"         ║
 /// ╚═══════════════════════════════════════════════════════════════════════╝ """)
+        
+
+# def notificacao():
+# # Configurações gerais de notificação.
+#     notificação.toast(
+#     "Helpyner Service", #Nome da notificação
+#     f"Bem-vindo(a) ao Helpyner {os.environ.get('USERNAME')}", #Corpo da notificação. Ele exibirá o seu nome como uma forma dinâmica.
+#     duration = 6, #Duração 
+#     threaded = True, # Valor definido como Verdadeiro.
+#     )
 
 while True:
-    display_menu()
-    command = input(Fore.RED + 'Helpyner> ')
+                     # titulo da ferramenta
+    display_menu() # Menu Display da ferramenta
+    comando = input(Fore.RED + 'Helpyner> ')
 
-    if command.lower() == 'sair':
+    if comando.lower() == 'sair':
        break
 
-    execute_command(command)
+    execute_command(comando)

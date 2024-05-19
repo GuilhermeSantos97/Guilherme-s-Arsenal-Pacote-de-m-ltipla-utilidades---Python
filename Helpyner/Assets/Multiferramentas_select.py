@@ -5,7 +5,7 @@ from colorama import Fore, init
 init()
 
 
-def display_menu():
+def menu_display():
     print(Fore.MAGENTA + """
  _____________________________________________________________________________________
 |---------------------――――> ESCOLHA UMA OPÇÃO QUE DESEJA  <――――-------------------- |
@@ -16,7 +16,6 @@ def display_menu():
 |―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――| 
           
 """ + Fore.RESET)
-    
     
 
 #   Aqui ele vai executar um comando atravez de um número
@@ -34,11 +33,12 @@ def execute_command(command):
     else:
         print('Opção invalida! Por favor use a opção certa.')
 
-while True:
-    display_menu()
-    command = input(Fore.RED + 'Helpyner> ')
 
-    if command.lower() == 'sair':
+while True:
+    menu_display()
+    comando = input(Fore.RED + 'Helpyner> ')
+
+    if comando.lower() == 'sair':
        break
 
-    execute_command(command)
+    execute_command(comando)

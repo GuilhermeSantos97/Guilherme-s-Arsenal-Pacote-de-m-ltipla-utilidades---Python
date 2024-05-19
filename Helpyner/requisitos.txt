@@ -4,3 +4,4 @@ colorama
 PIL
 rembg
 win10toast
+delphifmx
